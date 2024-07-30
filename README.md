@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+### Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. **Objective:**
 
-## Available Scripts
+   - The goal is to build a React application that displays a list of artworks using the provided API. The app should be responsive and provide features such as pagination, detailed view of each artwork, and search functionality.
 
-In the project directory, you can run:
+2. **Technology Stack:**
+   - **Frontend:** React, React Router
+   - **Styling:** CSS (flexbox for responsive design)
+   - **API Integration:** Async await to fetch the data
 
-### `npm start`
+### Setup and Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Prerequisites:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   - Node.js and npm installed on your machine.
 
-### `npm test`
+2. **Installation Steps:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   - Clone the repository from GitHub: `git clone <repository-url>`
+   - Navigate to the project directory: `cd project-directory`
+   - Install dependencies: `npm install`
 
-### `npm run build`
+3. **Running the Application:**
+   - Start the development server: `npm start`
+   - The application will be available at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Application Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Component Breakdown:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **App Component:**
+  - Manages routing and overall layout.
+- **Home Component:**
+  - Displays a list of artworks with pagination.
+- **ArtworkItem Component:**
+  - Represents individual artwork items in the list.
+- **ArtworkDetail Component:**
+  - Displays detailed information about a selected artwork.
+- **SearchBar Component:**
+  - Provides search functionality to filter artworks.
 
-### `npm run eject`
+### Implementation Details
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **API Integration:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   - The application uses the provided API to fetch artwork data.
+   - Async await is used for making HTTP requests.
+   - Data is stored in the state and managed using React's `useState` and `useEffect` hooks.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Routing:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - React Router is used to navigate between the Home page and the Artwork Detail page.
+   - The URL structure includes routes like `/` for the homepage and `/artwork/:id` for individual artwork details.
 
-## Learn More
+3. **State Management:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - React's built-in state management (useState) is utilized.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Styling:**
 
-### Code Splitting
+   - The application uses CSS for styling.
+   - Responsive design principles are applied to ensure the app works on both desktop and mobile devices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Pagination:**
 
-### Analyzing the Bundle Size
+   - Artworks are displayed in paginated form, 10 per page.
+   - Pagination controls allow navigation between pages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+6. **Search and Filter:**
 
-### Making a Progressive Web App
+   - A search bar is implemented to filter artworks by title.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Design Decisions
 
-### Advanced Configuration
+1. **Component-Based Architecture:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   - Components are designed to be reusable and maintainable.
 
-### Deployment
+2. **State Management:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   - Chose React's built-in state management for simplicity and ease of use.
 
-### `npm run build` fails to minify
+3. **Responsive Design:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   - Ensured the app is accessible and visually appealing on different screen sizes.
+
+4. **Documentation:**
+   - Clear comments and documentation are provided within the codebase.

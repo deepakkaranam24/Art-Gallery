@@ -1,0 +1,13 @@
+.art-detail {
+	padding: 20px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.art-detail img {
+	max-width: 100%;
+	height: 50px;
+	display: block;
+	margin: 20px 0;
+}

@@ -1,0 +1,23 @@
+.art-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.art-item {
+	width: 200px;
+	margin: 20px;
+	text-align: center;
+}
+
+.art-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.art-item h3 {
+	margin-top: 10px;
+	font-size: 1.2em;
+}
